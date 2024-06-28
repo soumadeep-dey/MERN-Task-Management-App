@@ -133,7 +133,7 @@ const TaskManager = () => {
     const searchResults = oldTasks.filter((task) =>
       task.name.toLowerCase().includes(searchTerm)
     );
-    setTasks(searchResults)
+    setTasks(searchResults);
   };
 
   return (
