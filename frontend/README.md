@@ -1,8 +1,4 @@
-# React + Vite
+# Task Management Application
+![React.js](https://img.shields.io/badge/Frontend-React.js-61DAFB) ![CSS3](https://img.shields.io/badge/CSS-FFDF6F) ![Node.js](https://img.shields.io/badge/JS_Env-Node.js-5FA04E) ![Express.js](https://img.shields.io/badge/Framework-Express.js-blue) ![MongoDB](https://img.shields.io/badge/Database-MongoDB-237a3b) ![Mongoose](https://img.shields.io/badge/ODM-Mongoose-darkred)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#### 🔗 [Task Management Application](https://mern-task-management-app-api.vercel)
