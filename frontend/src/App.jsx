@@ -45,6 +45,8 @@ const App = () => {
   useEffect(() => {
     if (updateTaskItem) {
       setInput(updateTaskItem.name);
+    } else {
+      setInput("");
     }
   }, [updateTaskItem]);
 
@@ -108,6 +110,8 @@ const App = () => {
       fetchAllTasks();
     } catch (error) {
       toast.error("Failed to update task");
+    } finally {
+      setUpdateTaskItem(null);
     }
   };
 
