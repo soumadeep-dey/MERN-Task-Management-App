@@ -127,35 +127,43 @@ const App = () => {
     <div className="d-flex flex-column align-items-center w-100 m-auto mt-5">
       <h1 className="mb-4">Task Manager App</h1>
 
-      <div className="d-flex justify-content-between align-items-center mb-4 w-50">
-        <TaskInput
-          input={input}
-          setInput={setInput}
-          handleTaskAction={handleTaskAction}
-        />
-        <div className="input-group flex-grow-1 me-1">
-          <input
-            type="text"
-            className="form-control me-1"
-            placeholder="Search tasks"
-            onChange={handleSearch}
-          />
-          <span className="input-group-text">
-            <FaSearch />
-          </span>
+      <div className="row justify-content-center w-100">
+        <div className="col-md-8 mb-4">
+          <div className="d-flex justify-content-between">
+            <TaskInput
+              input={input}
+              setInput={setInput}
+              handleTaskAction={handleTaskAction}
+            />
+            <div className="input-group flex-grow-1 me-1">
+              <input
+                type="text"
+                className="form-control me-1"
+                placeholder="Search tasks"
+                onChange={handleSearch}
+              />
+              <span className="input-group-text">
+                <FaSearch />
+              </span>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div className="d-flex flex-column w-50">
-        {tasks.map((task) => (
-          <TaskListItem
-            key={task._id}
-            task={task}
-            handleToggleTask={handleToggleTask}
-            setUpdateTaskItem={setUpdateTaskItem}
-            handleDeleteTask={handleDeleteTask}
-          />
-        ))}
+      <div className="row justify-content-center w-100">
+        <div className="col-md-8">
+          <div className="d-flex flex-column">
+            {tasks.map((task) => (
+              <TaskListItem
+                key={task._id}
+                task={task}
+                handleToggleTask={handleToggleTask}
+                setUpdateTaskItem={setUpdateTaskItem}
+                handleDeleteTask={handleDeleteTask}
+              />
+            ))}
+          </div>
+        </div>
       </div>
 
       <ToastContainer
